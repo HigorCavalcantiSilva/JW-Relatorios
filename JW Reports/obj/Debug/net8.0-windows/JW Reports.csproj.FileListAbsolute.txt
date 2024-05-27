@@ -1,0 +1,17 @@
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\bin\Debug\net8.0-windows\JW Reports.exe
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\bin\Debug\net8.0-windows\JW Reports.deps.json
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\bin\Debug\net8.0-windows\JW Reports.runtimeconfig.json
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\bin\Debug\net8.0-windows\JW Reports.dll
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\bin\Debug\net8.0-windows\JW Reports.pdb
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW_Reports.Form1.resources
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW Reports.csproj.GenerateResource.cache
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW Reports.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW Reports.AssemblyInfoInputs.cache
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW Reports.AssemblyInfo.cs
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW Reports.csproj.CoreCompileInputs.cache
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW Reports.dll
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\refint\JW Reports.dll
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW Reports.pdb
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW Reports.genruntimeconfig.cache
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\ref\JW Reports.dll
+C:\Users\Dev G2i\source\repos\JW Reports\JW Reports\obj\Debug\net8.0-windows\JW_Reports.Report.resources
