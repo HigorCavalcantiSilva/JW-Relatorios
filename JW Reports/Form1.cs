@@ -1,3 +1,4 @@
+using System.IO;
 using System.Windows.Forms;
 
 namespace JW_Reports
@@ -13,19 +14,59 @@ namespace JW_Reports
 
         private Label labelSelected;
 
-        private void FillGroups()
+        private string _folderFilesPdf;
+        private string _type;
+
+        public string FolderFilesPdf { get => _folderFilesPdf; set => _folderFilesPdf = value; }
+        public string type { get => _type; set => _type = value; }
+
+        private void FillNamesByFolder(string? folder = "")
         {
-            for (int i = 0; i < 5; i++)
+            // Limpa o ListBox e preenche com os nomes dos arquivos na pasta selecionada
+            listBox1.Items.Clear();
+            string selectedFolderPath = !string.IsNullOrEmpty(folder) ? folder : FolderFilesPdf; // Obtem o caminho da pasta selecionada
+            if (!string.IsNullOrEmpty(selectedFolderPath) && Directory.Exists(selectedFolderPath))
             {
-                Label label = new();
-                label.Text = $"TESTE {i}";
-                label.AutoSize = true;
-                label.BorderStyle = BorderStyle.FixedSingle;
-                label.BackColor = SystemColors.Control;
+                string[] files = Directory.GetFiles(selectedFolderPath, "*.pdf");
 
-                label.Click += new EventHandler(Label_Click);
+                Array.Sort(files);
 
-                tableLayoutPanel1.Controls.Add(label, 0, i);
+                foreach (string file in files)
+                {
+                    listBox1.Items.Add(Path.GetFileName(file).Replace(".pdf", ""));
+                }
+            }
+        }
+
+        public void FillGroups()
+        {
+
+            if(this.type == "1")
+            {
+                string selectedFolderPath = FolderFilesPdf; // Obtém o caminho da pasta selecionada
+                if (!string.IsNullOrEmpty(selectedFolderPath) && Directory.Exists(selectedFolderPath))
+                {
+                    string[] directories = Directory.GetDirectories(selectedFolderPath);
+
+                    int i = 0;
+                    // Adiciona os nomes das pastas ao ListBox
+                    foreach (string directory in directories)
+                    {
+                        Label label = new();
+                        label.Text = $"{Path.GetFileName(directory)}";
+                        label.AutoSize = true;
+                        label.BorderStyle = BorderStyle.FixedSingle;
+                        label.BackColor = SystemColors.Control;
+
+                        label.Click += new EventHandler(Label_Click);
+
+                        tableLayoutPanel1.Controls.Add(label, 0, i++);
+                    }
+                }
+            }
+            else
+            {
+                this.FillNamesByFolder();
             }
         }
 
@@ -43,19 +84,24 @@ namespace JW_Reports
             label.BackColor = Color.LightBlue;
             labelSelected = label;
 
-            listBox1.Items.Clear();
-            listBox1.Items.Add("TESTE MEU CHAPA");
+            this.FillNamesByFolder($"{this.FolderFilesPdf}\\{labelSelected.Text}");
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ListBox listBox = sender as ListBox;
-            
-            if(listBox.SelectedIndex != -1)
+
+            if (listBox.SelectedIndex != -1)
             {
                 Report report = new Report(listBox.Text);
                 report.ShowDialog();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Config config = new(this);
+            config.ShowDialog();
         }
     }
 }

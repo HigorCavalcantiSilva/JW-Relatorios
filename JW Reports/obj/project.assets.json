@@ -8,26 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Dev G2i\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\silva\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dev G2i\\source\\repos\\JW Reports\\JW Reports\\JW Reports.csproj",
+      "projectUniqueName": "C:\\Users\\silva\\Source\\Repos\\HigorCavalcantiSilva\\JW-Relatorios\\JW Reports\\JW Reports.csproj",
       "projectName": "JW Reports",
-      "projectPath": "C:\\Users\\Dev G2i\\source\\repos\\JW Reports\\JW Reports\\JW Reports.csproj",
-      "packagesPath": "C:\\Users\\Dev G2i\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dev G2i\\source\\repos\\JW Reports\\JW Reports\\obj\\",
+      "projectPath": "C:\\Users\\silva\\Source\\Repos\\HigorCavalcantiSilva\\JW-Relatorios\\JW Reports\\JW Reports.csproj",
+      "packagesPath": "C:\\Users\\silva\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\silva\\Source\\Repos\\HigorCavalcantiSilva\\JW-Relatorios\\JW Reports\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Dev G2i\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -35,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -77,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

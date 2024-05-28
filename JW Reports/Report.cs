@@ -17,6 +17,7 @@ namespace JW_Reports
         public Report(string file_name)
         {
             this.file_name = file_name;
+
             InitializeComponent();
             SetName();
         }
